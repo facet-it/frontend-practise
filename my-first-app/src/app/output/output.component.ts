@@ -19,7 +19,7 @@ export class Output{
     }
 
     randomOutput() {
-        let generator = new StringGenerator();
+        let generator = new StringGenerator(0,2);
 
         return generator.generateRandomString();
     }
