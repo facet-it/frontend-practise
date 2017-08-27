@@ -3,11 +3,13 @@ import {StringGenerator} from './StringGenerator'
 
 @Component({
  selector: 'fix-output',
- template: `
+ template: `<div class="row block">
     <p> non angular output<\p>
     <p> field output: {{field}}<\p>
     <p> method output: {{methodOutput()}}<\p>
     <p> method output, but random string. Refresh to check it out!: <b>{{randomOutput()}} </b><\p>
+
+    </div>
  `
 })
 /* Case sensitive!! */

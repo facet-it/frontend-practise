@@ -1,0 +1,8 @@
+<div class="row block">
+    <div class="row block"><h2>Random number generator</h2></div>
+    <label for="lowest">lowest boundary: </label><input type="text" name="lowest" [(ngModel)]="lowest" />
+    <label for="highest">highest boundary: </label><input type="text" name="highest" [(ngModel)]="highest"/>
+    <button type="button" (click)="generateRandomNumber()">Generate random number</button>
+    <div class="row block">{{error}}</div>
+    <div class="block">{{result}}</div>
+</div>
