@@ -9,10 +9,11 @@ export class RandomNumbers{
     result:number;
     error: string = "";
 
-    lowest:number;
-    highest: number;
+    lowest:number = 0;
+    highest: number = 0;
 
     generateRandomNumber() {
+        console.log(this.lowest > this.highest);
         this.result = 0;
         if(this.paramsAreValid(this.lowest, this.highest)) {
             this.result =Math.floor(Math.random() * ((this.highest-this.lowest)+1) + this.lowest);

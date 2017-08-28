@@ -1,0 +1,7 @@
+.fold{
+    background-image: url("../assets/fold.jpg");
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+}
