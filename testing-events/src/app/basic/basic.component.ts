@@ -6,5 +6,9 @@ import {Component} from '@angular/core';
     styleUrls: ["./basic.component.css"]
 })
 export class BasicEventing{
+    myText: string;
 
+    setText(event){
+        this.myText = event.target.value;
+    }
 }
