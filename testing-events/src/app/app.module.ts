@@ -5,12 +5,14 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import {BasicEventing} from './basic/basic.component';
 import {Simon} from './simonsays/simon.component';
+import {Repeater} from './repeater/repeater.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicEventing,
-    Simon
+    Simon,
+    Repeater
   ],
   imports: [
     BrowserModule,

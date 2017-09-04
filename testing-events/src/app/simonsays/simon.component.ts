@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
     templateUrl: "./simon.component.html",
@@ -8,7 +8,10 @@ import { Component } from '@angular/core';
 export class Simon{
     command: string;
 
+    @Output() simon: EventEmitter<string> = new EventEmitter<string>();
+
     speak() {
         console.log(this.command);
+        this.simon.emit(this.command);
     }
 }
