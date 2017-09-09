@@ -6,5 +6,12 @@
         Press start to get your assignment! remember it, then press the colored buttons to mimic your assignment, like in the real bobit game!
     </div>
 </div>
+<div class="row block centered spaced">
+    <div class="block">
+        <button type="button" (click)="generateRandomBobIt()">start</button>
+    </div>
+    <div class="block">
+        <assignment-line [assignment]="bobit"></assignment-line>
+    </div>
+</div>
 
-<button type="button" (click)="generateRandomBobIt()">start</button>
