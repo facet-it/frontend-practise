@@ -1,0 +1,9 @@
+.intro{
+    width: 80%;
+}
+
+@media screen and (min-width: 1200px){
+    .intro{
+        width: 20%;
+    }
+}
