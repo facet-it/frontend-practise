@@ -35,4 +35,25 @@ export class BobItGame{
 
         console.log("this is the current bobit assignment: ", this.bobit);
     }
+
+    assessSolution(event){
+        console.log("this is the solution passed ", event);
+        if(this.isCorrectSolution(event)) {
+            console.log("good job bro!");
+        }
+        else{
+            console.log("you stupid dohg?");
+        }
+    }
+
+    isCorrectSolution(solution:string[]) {
+        let isCorrect: boolean = true;
+        for(let index=0; index < solution.length; index ++) {
+            if(solution[index] !== this.bobit[index]) {
+                isCorrect = false;
+            }
+        }
+
+        return isCorrect;
+    }
 }

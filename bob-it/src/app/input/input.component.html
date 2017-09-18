@@ -1,0 +1,14 @@
+<div class="row block centered">
+    <div class="row block centered spaced">
+        <button type="button" class="block" (click)="clearSolution()">Clear solution</button>
+        <div class="block" *ngFor="let color of setButtons()">
+            <button type="button" class="button" [ngStyle]="{'background-color': color}" (click)="addToSolution(color)"></button>
+        </div>
+    </div>
+    <div class="row block centered spaced">
+        <div class="block item" *ngFor="let item of solution" [ngStyle]="{'background-color': item}"></div>
+    </div>
+    <div class="row block centered spaced">
+            <button type="button" class="block" (click)="sendSolution()">Send Solution</button>
+        </div>
+</div>
